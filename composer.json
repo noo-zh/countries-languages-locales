@@ -1,0 +1,21 @@
+{
+  "name": "noo-zh/countries-languages-locales",
+	"keywords": ["countries", "languages", "locales", "json", "datasets"],
+	"type": "library",
+	"homepage": "https://github.com/noo-zh/countries-languages-locales",
+	"license": "The MIT License",
+	"authors": [
+		{
+			"name": "Zdenek Hofler",
+			"homepage": "https://github.com/noo-zh"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"CLL\\": "lib/"
+		}
+	},
+	"require": {
+		"php": "^7.1"
+	}
+}
