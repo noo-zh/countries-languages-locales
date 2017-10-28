@@ -18,6 +18,7 @@ class TinyLanguages extends ExporterCommon implements Exporter, Interfaces\TinyL
   private const PARAM_MULTI_LOCALE_ALPHA2 = "--ds-multi-locale-alpha2";
   //private const PARAM_MULTI_LOCALE_ALPHA3 = "--ds-multi-locale-alpha3";
   private const PARAM_MULTI_LOCALE_LOCALE = "--ds-multi-locale-locale";
+  private const PARAM_MULTI_LOCALE_MIXED = "--ds-multi-locale-mixed";
   
   /**
    * @var array
@@ -45,6 +46,8 @@ class TinyLanguages extends ExporterCommon implements Exporter, Interfaces\TinyL
       $this->saveDatasetMultiLocaleAlpha2();
     } elseif ($this->isParam(self::PARAM_MULTI_LOCALE_LOCALE)) {
       $this->saveDatasetMultiLocaleLocale();
+    } elseif ($this->isParam(self::PARAM_MULTI_LOCALE_MIXED)) {
+      $this->saveDatasetMultiLocaleMixed();
     } else {
       die("No valid dataset output");
     }
@@ -99,6 +102,15 @@ class TinyLanguages extends ExporterCommon implements Exporter, Interfaces\TinyL
   private function saveDatasetMultiLocaleLocale()
   {
     $ds = new TinyLanguages\MultiLocaleLocale($this);
+    $ds->export();
+  }
+  
+  /**
+   * 
+   */
+  private function saveDatasetMultiLocaleMixed()
+  {
+    $ds = new TinyLanguages\MultiLocaleMixed($this);
     $ds->export();
   }
 }

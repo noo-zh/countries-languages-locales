@@ -18,6 +18,7 @@ commands[0]="TinyCountries --ds-multi-locale-alpha2"
 commands[1]="TinyCountries --ds-multi-locale-alpha3"
 commands[2]="TinyLanguages --ds-multi-locale-alpha2"
 commands[3]="TinyLanguages --ds-multi-locale-locale"
+commands[4]="TinyLanguages --ds-multi-locale-mixed"
 
 show_commands()
 {
