@@ -20,11 +20,9 @@ There is a couple of great open data sets on the web. So, why to use this tool i
 
 ## Formats
 
-There are currently only few predefined formats.
+All available datasets are already exported in [dist/](dist/) directory.
 
 ### List of countries
-
-All available datasets are already exported in [dist/](dist/) directory;
 
 #### TinyCountries --ds-multi-locale-alpha2
 
